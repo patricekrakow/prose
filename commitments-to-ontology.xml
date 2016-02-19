@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pro:prose xmlns:pro="http://prose.foo/2016-02-19/1/">
+  <!-- The UNIQUE ontology: -->
+  <pro:ontology><![CDATA[
+
+"Toto" is a "Thing".
+
+]]></pro:ontology>
+  <!-- The commitments: -->
+  <pro:commitments>
+    <!-- formatA commits to THE ontology: -->
+    <pro:commitment of="formatA">
+      <pro:meaning>
+        <pro:XPath>/Toto</pro:XPath>
+        <pro:prose>means "Toto".</pro:prose>
+        <pro:fragXSL xmlns:xsl="urn-to-be-replaced">
+          <xsl:element name="Toto"/>
+        </pro:fragXSL>
+      </pro:meaning>
+    </pro:commitment>
+    <!-- formatB commits to THE ontology: -->
+    <pro:commitment of="formatB">
+      <pro:meaning>
+        <pro:XPath>/toto</pro:XPath>
+        <pro:prose>means "Toto".</pro:prose>
+        <pro:fragXSL xmlns:xsl="urn-to-be-replaced">
+          <xsl:element name="toto"/>
+        </pro:fragXSL>
+      </pro:meaning>
+    </pro:commitment>
+    <!-- formatC commits to THE ontology: -->
+    <pro:commitment of="formatC">
+      <pro:meaning>
+        <pro:XPath>/TOTO</pro:XPath>
+        <pro:prose>means "Toto".</pro:prose>
+        <pro:fragXSL xmlns:xsl="urn-to-be-replaced">
+          <xsl:element name="TOTO"/>
+        </pro:fragXSL>
+      </pro:meaning>
+    </pro:commitment>
+  </pro:commitments>
+</pro:prose>
